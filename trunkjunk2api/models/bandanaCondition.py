@@ -1,4 +1,4 @@
 from django.db import models
 
-class BandanaPattern(models.Model):
+class BandanaCondition(models.Model):
     name = models.CharField(max_length=50)
