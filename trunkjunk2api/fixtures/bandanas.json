@@ -1,0 +1,50 @@
+[
+  {
+    "model": "trunkjunk2api.bandana",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "name": "Test",
+      "size": "Test",
+      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382",
+      "description": "Test",
+      "origin": "Test",
+      "pattern": 1,
+      "marking": 1,
+      "color": 1,
+      "condition": 1
+  }
+},
+{
+  "model": "trunkjunk2api.bandana",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "name": "Test2",
+    "size": "Test2",
+    "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382",
+    "description": "Test2",
+    "origin": "Test2",
+    "pattern": 2,
+    "marking": 2,
+    "color": 2,
+    "condition": 2
+}
+},
+{
+  "model": "trunkjunk2api.bandana",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "name": "Test3",
+    "size": "Test3",
+    "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382",
+    "description": "Test3",
+    "origin": "Test3",
+    "pattern": 3,
+    "marking": 3,
+    "color": 3,
+    "condition": 3
+}
+}
+]

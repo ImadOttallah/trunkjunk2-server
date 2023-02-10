@@ -1,0 +1,42 @@
+[
+  {
+    "model": "trunkjunk2api.bandana_collection",
+    "pk": 1,
+    "fields": {
+      "bandana": 1,
+      "collection": 1
+  }
+},
+{
+  "model": "trunkjunk2api.bandana_collection",
+  "pk": 2,
+  "fields": {
+    "bandana": 2,
+    "collection": 1
+}
+},
+{
+  "model": "trunkjunk2api.bandana_collection",
+  "pk": 3,
+  "fields": {
+    "bandana": 3,
+    "collection": 1
+}
+},
+{
+  "model": "trunkjunk2api.bandana_collection",
+  "pk": 4,
+  "fields": {
+    "bandana": 2,
+    "collection": 2
+}
+},
+{
+  "model": "trunkjunk2api.bandana_collection",
+  "pk": 5,
+  "fields": {
+    "bandana": 3,
+    "collection": 3
+}
+}
+]

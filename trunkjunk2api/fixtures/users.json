@@ -1,0 +1,53 @@
+
+[
+  {
+    "model": "trunkjunk2api.user",
+    "pk": 1,
+    "fields": {
+      "uid": 1,
+      "name": "Imad",
+      "image": "",
+      "email": "imad@imad.com"
+  }
+},
+{
+  "model": "trunkjunk2api.user",
+  "pk": 2,
+  "fields": {
+    "uid": 2,
+    "name": "Cody",
+    "image": "",
+    "email": "cody@cody.com"
+}
+},
+{
+  "model": "trunkjunk2api.user",
+  "pk": 3,
+  "fields": {
+    "uid": 3,
+    "name": "Tots",
+    "image": "",
+    "email": "tots@tots.com"
+  }
+},
+{
+  "model": "trunkjunk2api.user",
+  "pk": 4,
+  "fields": {
+    "uid": 4,
+    "name": "Adam",
+    "image": "",
+    "email": "adam@adam.com"
+  }
+},
+{
+  "model": "trunkjunk2api.user",
+  "pk": 5,
+  "fields": {
+    "uid": 5,
+    "name": "Tatiana",
+    "image": "",
+    "email": "tatiana@tatiana.com"
+  }
+}
+]
