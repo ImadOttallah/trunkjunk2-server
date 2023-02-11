@@ -6,8 +6,7 @@
       "user": 1,
       "name": "Test",
       "description": "Test",
-      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382",
-      "bandana_collection": 1
+      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382"
   }
   },
   {
@@ -17,8 +16,7 @@
       "user": 2,
       "name": "Test2",
       "description": "Test2",
-      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-04_600x.jpg?v=1606692383",
-      "bandana_collection": 2
+      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-04_600x.jpg?v=1606692383"
   }
   },
   {
@@ -28,8 +26,7 @@
       "user": 3,
       "name": "Test3",
       "description": "Test3",
-      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382",
-      "bandana_collection": 3
+      "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382"
   }
   }
 

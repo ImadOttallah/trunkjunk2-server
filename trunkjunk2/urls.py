@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
+from rest_framework import routers
+from trunkjunk2api.views import register_user, check_user
+from trunkjunk2api.views import UserView, CollectionView, BandanaCollectionView, BandanaView
+
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'users', UserView, 'user')
+router.register(r'collections', CollectionView, 'collection')
+router.register(r'bandana_collections', BandanaCollectionView, 'bandana_collection')
+router.register(r'bandanas', BandanaView, 'bandana')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register', register_user),
+    path('checkuser', check_user),
+    path('', include(router.urls)),
 ]

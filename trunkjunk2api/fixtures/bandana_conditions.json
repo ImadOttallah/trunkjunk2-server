@@ -1,20 +1,20 @@
 [
   {
-    "model": "trunkjunk2api.bandana_condition",
+    "model": "trunkjunk2api.bandanacondition",
     "pk": 1,
     "fields": {
       "name": "mint"
   }
 },
 {
-  "model": "trunkjunk2api.bandana_condition",
+  "model": "trunkjunk2api.bandanacondition",
   "pk": 2,
   "fields": {
     "name": "fair"
 }
 },
 {
-  "model": "trunkjunk2api.bandana_condition",
+  "model": "trunkjunk2api.bandanacondition",
   "pk": 3,
   "fields": {
     "name": "thrashed"

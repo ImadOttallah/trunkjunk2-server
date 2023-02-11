@@ -5,10 +5,10 @@ python3 manage.py migrate
 python3 manage.py makemigrations trunkjunk2api
 python3 manage.py migrate trunkjunk2api
 python3 manage.py loaddata users
-python3 manage.py loaddata bandanacolors
-python3 manage.py loaddata bandanaconditions
-python3 manage.py loaddata bandanamarkings
-python3 manage.py loaddata bandanapatterns
+python3 manage.py loaddata bandana_colors
+python3 manage.py loaddata bandana_conditions
+python3 manage.py loaddata bandana_markings
+python3 manage.py loaddata bandana_patterns
 python3 manage.py loaddata bandanas
-python3 manage.py loaddata bandanacollections
 python3 manage.py loaddata collections
+python3 manage.py loaddata bandana_collections

@@ -1,20 +1,20 @@
 [
   {
-    "model": "trunkjunk2api.bandana_marking",
+    "model": "trunkjunk2api.bandanamarking",
     "pk": 1,
     "fields": {
       "name": "elephant trunk up"
   }
 },
 {
-  "model": "trunkjunk2api.bandana_marking",
+  "model": "trunkjunk2api.bandanamarking",
   "pk": 2,
   "fields": {
     "name": "elepahnat trunk down"
 }
 },
 {
-  "model": "trunkjunk2api.bandana_marking",
+  "model": "trunkjunk2api.bandanamarking",
   "pk": 3,
   "fields": {
     "name": "tiger"

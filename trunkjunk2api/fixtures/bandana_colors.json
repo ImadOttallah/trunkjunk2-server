@@ -1,20 +1,20 @@
 [
   {
-    "model": "trunkjunk2api.bandana_color",
+    "model": "trunkjunk2api.bandanacolor",
     "pk": 1,
     "fields": {
       "name": "blue"
   }
 },
 {
-  "model": "trunkjunk2api.bandana_color",
+  "model": "trunkjunk2api.bandanacolor",
   "pk": 2,
   "fields": {
     "name": "red"
 }
 },
 {
-  "model": "trunkjunk2api.bandana_color",
+  "model": "trunkjunk2api.bandanacolor",
   "pk": 3,
   "fields": {
     "name": "white"

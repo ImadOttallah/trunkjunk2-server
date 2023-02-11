@@ -16,4 +16,3 @@ class Bandana(models.Model):
     marking = models.ForeignKey(BandanaMarking, on_delete=models.CASCADE)
     color = models.ForeignKey(BandanaColor, on_delete=models.CASCADE)
     condition = models.ForeignKey(BandanaCondition, on_delete=models.CASCADE)
-     

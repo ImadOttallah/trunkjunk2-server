@@ -1,20 +1,20 @@
 [
   {
-    "model": "trunkjunk2api.bandana_pattern",
+    "model": "trunkjunk2api.bandanapattern",
     "pk": 1,
     "fields": {
       "name": "geometric"
   }
 },
 {
-  "model": "trunkjunk2api.bandana_pattern",
+  "model": "trunkjunk2api.bandanapattern",
   "pk": 2,
   "fields": {
     "name": "paisley"
 }
 },
 {
-  "model": "trunkjunk2api.bandana_pattern",
+  "model": "trunkjunk2api.bandanapattern",
   "pk": 3,
   "fields": {
     "name": "advertisment"
