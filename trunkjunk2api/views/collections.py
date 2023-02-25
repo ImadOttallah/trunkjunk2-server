@@ -19,6 +19,10 @@ class CollectionView(ViewSet):
     def list(self, request):
         """GET all campaigns"""
         collections = Collection.objects.all()
+        bandana = request.query_params.get('bandana', None)
+        if bandana is not None:
+            bandanas = bandanas.filter(bandana_id=bandana)
+            bandana = request.query_params.get('bandana_id', None)
         serializer = CollectionSerializer(collections, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -54,6 +58,6 @@ class CollectionView(ViewSet):
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collection
-        fields = ('id', 'user', 'name', 'image', 'description')
+        fields = ('id', 'user', 'name', 'image', 'description','bandanas')
         depth = 2
     

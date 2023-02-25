@@ -18,13 +18,17 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from trunkjunk2api.views import register_user, check_user
-from trunkjunk2api.views import UserView, CollectionView, BandanaCollectionView, BandanaView
+from trunkjunk2api.views import UserView, CollectionView, BandanaCollectionView, BandanaView, BandanaColorView, BandanaConditionView, BandanaMarkingView, BandanaPatternView
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UserView, 'user')
 router.register(r'collections', CollectionView, 'collection')
 router.register(r'bandana_collections', BandanaCollectionView, 'bandana_collection')
+router.register(r'bandana_colors', BandanaColorView, 'bandana_color')
+router.register(r'bandana_conditions', BandanaConditionView, 'bandana_condition')
+router.register(r'bandana_markings', BandanaMarkingView, 'bandana_marking')
+router.register(r'bandana_patterns', BandanaPatternView, 'bandana_pattern')
 router.register(r'bandanas', BandanaView, 'bandana')
 
 urlpatterns = [

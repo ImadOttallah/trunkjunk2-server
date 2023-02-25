@@ -17,13 +17,13 @@ class BandanaView(ViewSet):
             return HttpResponseServerError(ex)
 
     def list(self, request):
-        """GET all campaigns"""
+        """GET all bandanas"""
         bandanas = Bandana.objects.all()
         serializer = BandanaSerializer(bandanas, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
-        """Handle PUT requests for a campaign"""
+        """Handle PUT requests for a bandana"""
         user = User.objects.get(pk=request.data["user"])
         pattern = BandanaPattern.objects.get(pk=request.data["pattern"])
         marking = BandanaMarking.objects.get(pk=request.data["marking"])
@@ -34,7 +34,7 @@ class BandanaView(ViewSet):
             size = request.data["size"],
             image = request.data["image"],
             description = request.data["description"],
-            origin = request.data["image"],
+            origin = request.data["origin"],
             pattern = pattern,
             marking = marking,
             color = color,
@@ -46,21 +46,20 @@ class BandanaView(ViewSet):
         return Response(serializer.data)
 
     def update(self, request, pk):
-        """Handle PUT requests for a campaign"""
+        """Handle PUT requests for a bandana"""
         pattern = BandanaPattern.objects.get(pk=request.data["pattern"])
         marking = BandanaMarking.objects.get(pk=request.data["marking"])
         color = BandanaColor.objects.get(pk=request.data["color"])
         condition = BandanaCondition.objects.get(pk=request.data["condition"])
-        
         bandana = Bandana.objects.get(pk=pk)
         bandana.name = request.data["name"]
         bandana.image = request.data["image"]
         bandana.description = request.data["description"]
+        bandana.origin = request.data["origin"]
         bandana.pattern = pattern
         bandana.marking = marking
         bandana.color = color
         bandana.condition = condition
-        
         bandana.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 

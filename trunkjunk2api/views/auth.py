@@ -4,6 +4,10 @@ from trunkjunk2api.models import User
 
 @api_view(['POST'])
 def check_user(request):
+    '''Checks to see if User exists
+      Method arguments:
+        request -- The full HTTP request object
+      '''
     uid = request.data['uid']
 
     user = User.objects.filter(uid=uid).first()
@@ -23,6 +27,10 @@ def check_user(request):
 
 @api_view(['POST'])
 def register_user(request):
+    '''Handles the creation of a new user for authentication
+    Method arguments:
+      request -- The full HTTP request object
+    '''
 
     user = User.objects.create(
         name=request.data['name'],
