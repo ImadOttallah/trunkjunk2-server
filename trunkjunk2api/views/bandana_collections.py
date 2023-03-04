@@ -24,8 +24,8 @@ class BandanaCollectionView(ViewSet):
       
     def create(self, request):
         """Handle PUT requests for a bandana_collection"""
-        bandana = Bandana.objects.get(pk=request.data["bandana"])
-        collection = Collection.objects.get(pk=request.data["collection"])
+        bandana = Bandana.objects.get(pk=request.data["bandana_id"])
+        collection = Collection.objects.get(pk=request.data["collection_id"])
         bandanacollection = BandanaCollection.objects.create(
             bandana = bandana,
             collection = collection,
