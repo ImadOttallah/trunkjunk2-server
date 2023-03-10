@@ -19,6 +19,9 @@ class BandanaCollectionView(ViewSet):
     def list(self, request):
         """GET all bandana_collections"""
         bandanacollections = BandanaCollection.objects.all()
+        collectionbandana = request.query_params.get('collection', None)
+        if collectionbandana is not None:
+            bandanacollections.filter(collection=collectionbandana)
         serializer = BandanaCollectionSerializer(bandanacollections, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
       

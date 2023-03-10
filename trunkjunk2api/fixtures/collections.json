@@ -4,8 +4,8 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "name": "Test",
-      "description": "Test",
+      "name": "Collection 1",
+      "description": "Etiam porta metus dui, non dapibus lacus sagittis aliquam.",
       "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382"
   }
   },
@@ -14,8 +14,8 @@
     "pk": 2,
     "fields": {
       "user": 2,
-      "name": "Test2",
-      "description": "Test2",
+      "name": "Collection 2",
+      "description": "Etiam at dolor nec diam laoreet cursus eget non lectus.",
       "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-04_600x.jpg?v=1606692383"
   }
   },
@@ -24,8 +24,8 @@
     "pk": 3,
     "fields": {
       "user": 3,
-      "name": "Test3",
-      "description": "Test3",
+      "name": "Collection 3",
+      "description": "Etiam at dolor nec diam laoreet cursus eget non lectus.",
       "image": "https://cdn.shopify.com/s/files/1/0289/5497/products/open-road-bandana-01_600x.jpg?v=1606692382"
   }
   }

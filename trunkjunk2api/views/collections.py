@@ -13,6 +13,8 @@ class CollectionView(ViewSet):
             collection = Collection.objects.get(pk=pk)
             bandanas = Bandana.objects.filter(joined_bandanas__collection_id=collection)
             collection.bandanas.set(bandanas)
+            # bandanas = BandanaCollection.objects.filter(collection=collection)
+            # collection.bandanas.set(bandanas)
             serializer = CollectionSerializer(collection, context={'collection': collection})
             return Response(serializer.data)
         except Exception as ex:
@@ -86,8 +88,8 @@ class BandanaSerializer(serializers.ModelSerializer):
         serializer = BandanaCollectionSerializer(bandana_collections, many=True)
         return serializer.data
 class CollectionSerializer(serializers.ModelSerializer):
+    bandanas=BandanaSerializer(many=True)
     class Meta:
         model = Collection
         fields = ('id', 'user', 'name', 'image', 'description','bandanas')
         depth = 2
-    
